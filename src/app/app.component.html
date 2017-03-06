@@ -1,9 +1,19 @@
-<md-toolbar color="primary">
-  <span>Custom Toolbar</span>
+<md-toolbar>
+  <span style="text-transform: uppercase;">{{title}}</span>
 </md-toolbar>
 
-<div class="wrap" fxLayout="row" fxLayoutAlign="center start">
-  <div fxFlex="70">
-    <app-media-player></app-media-player>
+<div class="wrap">
+  <div fxLayout="column" fxLayoutAlign="space-between center" fxFill>
+    <div style="width: 70%;">
+      <app-media-player></app-media-player>
+    </div>
+    <div>
+      <md-chip-list>
+        <md-chip>Alex</md-chip>
+        <md-chip>Jared</md-chip>
+        <md-chip color="primary" selected="true">Deer Kiss</md-chip>
+        <md-chip color="accent" selected="true">Bonzo</md-chip>
+      </md-chip-list>
+    </div>
   </div>
 </div>

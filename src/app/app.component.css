@@ -8,4 +8,11 @@
 
 div.wrap {
   margin: 10px;
+  height: 85vh;
+}
+
+md-toolbar {
+  background: #4aab5e;
+  font-weight: bold;
+  color: rgba(0,0,0,.40);
 }
